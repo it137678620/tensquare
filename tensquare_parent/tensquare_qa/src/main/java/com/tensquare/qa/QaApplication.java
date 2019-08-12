@@ -10,7 +10,6 @@ public class QaApplication {
 		SpringApplication.run(QaApplication.class, args);
 	}
 
-	
 	@Bean
 	public IdWorker idWorkker(){
 		return new IdWorker(1, 1);
