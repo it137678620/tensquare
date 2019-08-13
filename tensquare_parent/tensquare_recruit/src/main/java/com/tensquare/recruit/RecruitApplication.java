@@ -9,7 +9,9 @@ import util.IdWorker;
 public class RecruitApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RecruitApplication.class, args);
+		SpringApplication.run(
+				RecruitApplication.class, args);
+
 	}
 
 	@Bean
