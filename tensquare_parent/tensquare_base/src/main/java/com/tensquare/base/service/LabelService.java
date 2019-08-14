@@ -2,7 +2,7 @@ package com.tensquare.base.service;
 
 import com.tensquare.base.dao.LabelDao;
 import com.tensquare.base.pojo.Label;
-import entity.IdWorker;
+
 import entity.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -10,6 +10,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+import util.IdWorker;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;

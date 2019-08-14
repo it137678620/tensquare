@@ -3,6 +3,7 @@ package com.tensquare.qa.controller;
 import java.util.List;
 import java.util.Map;
 
+import com.tensquare.qa.client.LabelClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -31,6 +32,25 @@ public class ProblemController {
 
     @Autowired
     private ProblemService problemService;
+
+
+    @Autowired
+    private LabelClient labelClient;
+
+    /**
+     * 根据标签id查询 标签
+     * @param labelid
+     * @return
+     */
+    @RequestMapping(value="/label/{labelid}",method = RequestMethod.GET)
+    public Result findLabelById(@PathVariable("labelid") String labelid){
+        return labelClient.findById(labelid);
+    }
+
+
+
+
+
 
     /**
      * 根据标签id 分页查询最新的问题

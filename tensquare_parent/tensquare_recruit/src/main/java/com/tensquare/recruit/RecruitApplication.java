@@ -8,11 +8,7 @@ import util.IdWorker;
 @SpringBootApplication
 public class RecruitApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(
-				RecruitApplication.class, args);
-
-	}
+	public static void main(String[] args) { SpringApplication.run(RecruitApplication.class, args); }
 
 	@Bean
 	public IdWorker idWorkker(){
